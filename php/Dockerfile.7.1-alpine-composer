@@ -1,0 +1,7 @@
+FROM marijnkoesen/php:7.1-alpine
+
+RUN apk --no-cache add curl git
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+
+# Keep Git, as in some cases composer uses git to clone a repo, when dev-master is requested for example
+RUN apk --no-cache del curl
