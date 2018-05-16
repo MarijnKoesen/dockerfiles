@@ -6,3 +6,6 @@ docker push marijnkoesen/php:7.1-alpine-composer
 
 docker build -t marijnkoesen/php:7.1-alpine-composer-gd -f Dockerfile.7.1-alpine-composer-gd .
 docker push marijnkoesen/php:7.1-alpine-composer-gd
+
+docker build -t marijnkoesen/php:7.1-alpine-werkspot -f Dockerfile.7.1-alpine-werkspot .
+docker push marijnkoesen/php:7.1-alpine-werkspot
