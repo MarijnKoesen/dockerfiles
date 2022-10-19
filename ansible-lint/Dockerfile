@@ -1,7 +1,7 @@
 FROM python:2.7-alpine
 
 # Based on https://hub.docker.com/r/yokogawa/ansible-lint/
-ENV VERSION 3.4.21
+ENV VERSION 4.1.0
 RUN apk add --no-cache git \
  && apk add --no-cache --virtual .build-deps \
     make \
