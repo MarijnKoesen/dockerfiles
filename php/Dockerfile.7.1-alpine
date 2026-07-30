@@ -1,5 +1,5 @@
 # https://medium.com/@jeromegamez/build-your-own-php-docker-image-3c55c9e29b59
-FROM alpine:3.6
+FROM alpine:3.7
 
 RUN apk --no-cache add \
         php7 \
