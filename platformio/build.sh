@@ -1,4 +1,9 @@
-docker build -t marijnkoesen/platformio:3.5.2 -f Dockerfile-3.5.2 .
-docker tag marijnkoesen/platformio:3.5.2 marijnkoesen/platformio:latest
-docker push marijnkoesen/platformio:3.5.2
+docker buildx build \
+  --platform linux/amd64,linux/arm64 \
+  -t marijnkoesen/platformio:6.1.19 \
+  -f Dockerfile-6.1.19 \
+  --push .
+
+docker tag marijnkoesen/platformio:6.1.19 marijnkoesen/platformio:latest
+docker push marijnkoesen/platformio:6.1.19
 docker push marijnkoesen/platformio:latest
